@@ -1,4 +1,4 @@
-const events = require('events');
+// const events = require('events');
 const fs = require('fs');
 // const readline = require('readline');
 const csv=require('csvtojson');
@@ -11,7 +11,7 @@ csv()
   arr.map(obj => {
     fs.appendFile('output/nodejs-hw1-ex2.txt', JSON.stringify(obj)+'\n', (err) => {
       if(err) {
-          console.log(err);
+        console.log(err);
       }
     });
   });
